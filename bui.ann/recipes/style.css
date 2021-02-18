@@ -1,20 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 
+
+.contentContainer {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .imagesWrapper {
     display: flex;
     align-content: space-between;
+    position: relative;
 }
 
 img {
-    width: 40%;
+    width: 100%;
 }
+
+.imagesContainer {
+    padding: 20px;
+    position: relative;
+}
+
+.imagesContainer + .imagesContainer {
+    margin-left: 20px;
+}
+
+.imagesContainer::after {
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #E8DACC;
+    z-index: -1;
+}
+
 
 .stepsWrapper {
     display: flex;
-    /* max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto; */
+    margin-bottom: 30px;
 }
 
 .ingredientsWrapper {
@@ -29,17 +56,20 @@ h1,h4,h5 {
     margin: 0;
 }
 
-h1 {
+.title {
     font-family: 'Playfair Display', serif;
     font-size: 50px;
+    margin-bottom: 40px;
 }
 
-h4 {
+.recipeTitle {
     font-family: 'Playfair Display', serif;
     font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-h5 {
+.stepsTitle {
     font-family: 'Inter', sans-serif;
     color: #9A9A9A;
     font-weight: 500;
@@ -56,13 +86,18 @@ ul li {
     line-height: 1.75em;
 }
 
-.firstRecipeWrapper {
+.recipeWrapper {
     border: 1px black;
-    border-bottom-style: solid;
     border-top-style: solid;
     margin-top: 40px;
 }
 
+.ingredientsWrapper {
+    flex-basis: 30%;
+}
 
+.prepWrapper {
+    flex-basis: 70%;
+}
 
 

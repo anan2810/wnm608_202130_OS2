@@ -8,17 +8,30 @@
     <link rel="stylesheet" href="normalize.css"/>
 </head>
 <body>
-    <div class="headerWrapper">
-        <h1>Recipes for a morning routine</h1>
-            <div class="imagesWrapper">
-                <img src="./images/v-1.jpg" alt="Vietnamese-Coffee-Filter-Vietnam-Authentic">
-                <img src="./images/c-3.jpg" alt="Sweet-Sour-Chicken">
-                <img src="./images/s-2.jpg" alt="Squash-Soup">
-            </div>
-    </div>
+    <div class="contentContainer">
+        <div class="headerWrapper">
+            <h1 class="title">Recipes for a morning routine</h1>
+                <div class="imagesWrapper">
+                    <div class="imagesContainer">
+                        <a href="#vietCoffee">
+                        <img src="./images/v-1.jpg" alt="Vietnamese-Coffee-Filter-Vietnam-Authentic">
+                        </a>
+                    </div>
+                    <div class="imagesContainer">
+                        <a href="#sweetSourChicken">
+                        <img src="./images/c-3.jpg" alt="Sweet-Sour-Chicken">
+                        </a>
+                    </div>
+                    <div class="imagesContainer">
+                        <a href="#squashSoup">
+                        <img src="./images/s-2.jpg" alt="Squash-Soup">
+                        </a>
+                    </div>
+                </div>
+        </div>
 
-    <div class="bodyWrapper">
-        <div class="firstRecipeWrapper">
+        <div class="bodyWrapper">
+        <div class="recipeWrapper" id="vietCoffee">
             <h4 class="recipeTitle">Vietnamese Coffee</h4>
                 <div class="stepsWrapper">
                     <div class="ingredientsWrapper">
@@ -45,7 +58,7 @@
                 </div>
         </div>
 
-        <div class="secondRecipeWrapper">
+        <div class="recipeWrapper" id="sweetSourChicken">
             <h4 class="recipeTitle">Sweet & Sour Chicken</h4>
                 <div class="stepsWrapper">
                     <div class="ingredientsWrapper">
@@ -81,9 +94,42 @@
                             <li>Serve the sweet and sour chicken with white rice </li>
                         </ul>
                     </div>                   
-                </div>            
+                </div> 
+            </div>           
         </div>
-    </div>
-    
+
+        <div class="recipeWrapper" id="squashSoup">
+            <h4 class="recipeTitle">Vietnamese Squash Soup</h4>
+                <div class="stepsWrapper">
+                    <div class="ingredientsWrapper">
+                        <h5 class="stepsTitle">Ingredients & equipments</h5>
+                        <ul class="ingredientsList">
+                            <li>1 medium squash </li>
+                            <li>1/2 pounds grounded pork </li>
+                            <li>1/2 1 carrot </li>
+                            <li>1 tablespoon of dried shrimp</li>
+                            <li>2 green onions, and some cilantro </li>
+                            <li>1/4 tsp of minced shallot </li>
+                        </ul>
+                    </div>
+
+                    <div class="prepWrapper">
+                        <h5 class="stepsTitle">Preparations</h5>
+                        <ul class="prepList">
+                            <li>Pour 1/4 cooking oil to heat, then add mince shallot </li>
+                            <li>Add 1 tsp of grounded pork and dried shrimp and stir until it cook through</li>
+                            <li>Add 4 cups of water, and let the water boils</li>
+                            <li>Chop squash and carrot in to cubes </li>
+                            <li>Chop green onion and cilantro and put into a dish</li>
+                            <li>When the water boils, add squash and carrot, and wait 7-10 min for it to cook through</li>
+                            <li>Add salt, sugar and chicken powder based on your taste</li>
+                            <li>Add green onion & cilantro when everything boils </li>
+                            <li>Serve the squash soup with white rice or by itself</li>
+                        </ul>
+                    </div>                   
+                </div>
+        </div>
+        </div>
+</div>
 </body>
 </html>
