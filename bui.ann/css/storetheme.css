@@ -1,0 +1,9 @@
+:root {
+    --color-neutral-light: orange;
+    --color-neutral-medium: orange;
+    --color-neutral-dark: orange;
+}
+
+body {
+    background-color: blue;
+}
